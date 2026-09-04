@@ -1,0 +1,49 @@
+{
+  "summary_index": "zathras-results",
+  "timeseries_index": "zathras-timeseries",
+  "runs": [
+    {
+      "result_uuid": "11111111-1111-4111-a111-111111111101",
+      "day_offset": 7,
+      "iterations_per_second": 193245.2,
+      "run_2_iterations_per_second": 195120.4
+    },
+    {
+      "result_uuid": "11111111-1111-4111-a111-111111111102",
+      "day_offset": 6,
+      "iterations_per_second": 193980.1,
+      "run_2_iterations_per_second": 194510.0
+    },
+    {
+      "result_uuid": "11111111-1111-4111-a111-111111111103",
+      "day_offset": 5,
+      "iterations_per_second": 192880.5,
+      "run_2_iterations_per_second": 193400.2
+    },
+    {
+      "result_uuid": "11111111-1111-4111-a111-111111111104",
+      "day_offset": 4,
+      "iterations_per_second": 193650.0,
+      "run_2_iterations_per_second": 194005.7
+    },
+    {
+      "result_uuid": "11111111-1111-4111-a111-111111111105",
+      "day_offset": 3,
+      "iterations_per_second": 193100.3,
+      "run_2_iterations_per_second": 193855.9
+    },
+    {
+      "result_uuid": "11111111-1111-4111-a111-111111111106",
+      "day_offset": 2,
+      "iterations_per_second": 192950.8,
+      "run_2_iterations_per_second": 193220.1
+    },
+    {
+      "result_uuid": "22222222-2222-4222-a222-222222222201",
+      "day_offset": 1,
+      "iterations_per_second": 171500.0,
+      "run_2_iterations_per_second": 172100.5,
+      "note": "Intentional ~11% iterations_per_second drop vs baseline (~193k)"
+    }
+  ]
+}
