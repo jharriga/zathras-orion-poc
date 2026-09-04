@@ -1,0 +1,19 @@
+# Orion config for real Chronicler exports on an external OpenSearch cluster.
+# Customize metadata filters to match your environment (cloud provider, instance type, etc.).
+tests:
+  - name: coremark-chronicler
+    version_field: test.version
+    uuid_field: metadata.document_id
+    timestamp: metadata.test_timestamp
+    metadata:
+      test.name: coremark
+
+    metrics:
+      - name: iterations_per_second
+        metric_of_interest: results.runs.run_1.metrics.iterations_per_second
+        direction: -1
+        threshold: 5
+        agg:
+          agg_type: avg
+        labels:
+          - "[metric: iterations_per_second]"

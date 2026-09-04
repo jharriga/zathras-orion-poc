@@ -1,0 +1,22 @@
+# Orion config for Chronicler / Zathras CoreMark results in zathras-results.
+# Mock preload adds top-level uuid and iterations_per_second; timestamps use metadata.test_timestamp.
+tests:
+  - name: coremark-zathras
+    version_field: test.version
+    uuid_field: uuid
+    timestamp: metadata.test_timestamp
+    metadata:
+      test.name: coremark
+      metadata.cloud_provider: local
+      metadata.instance_type: mock_x86_8c
+      metadata.scenario_name: zathras-orion-eval
+
+    metrics:
+      - name: iterations_per_second
+        metric_of_interest: iterations_per_second
+        direction: -1
+        threshold: 5
+        agg:
+          agg_type: avg
+        labels:
+          - "[metric: iterations_per_second]"
